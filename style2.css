@@ -9,10 +9,10 @@
   --cor-background: rgb(80, 180, 162);
   --cor-fontes: rgb(233, 255, 251);
 }
-input[type=checkbox]:checked ~ .container-nav{
+input[type="checkbox"]:checked ~ .container-nav {
   display: block;
- }
- input[type=checkbox] {
+}
+input[type="checkbox"] {
   display: none;
 }
 #logo + #barraNavegacao p {
@@ -22,7 +22,7 @@ input[type=checkbox]:checked ~ .container-nav{
   display: block;
   line-height: 100px;
   font-size: 34px;
-  color:rgb(26, 163, 163);
+  color: rgb(26, 163, 163);
   user-select: none;
   cursor: pointer;
 }
@@ -33,19 +33,20 @@ input[type=checkbox]:checked ~ .container-nav{
   font-weight: 500;
   color: var(--cor-fontes);
 }
-#logo{
+#logo {
   width: 15%;
   height: 15%;
 }
-.container-nav{
+
+/* Barra de Navegação e afins */
+.container-nav {
   background-color: var(--cor-background);
-  display:none;
+  display: none;
   position: absolute;
   align-items: center;
   right: 0;
   left: 0;
   text-align: center;
-  
 }
 #barraNavegacao {
   display: flex;
@@ -54,14 +55,14 @@ input[type=checkbox]:checked ~ .container-nav{
   background-color: var(--cor-background);
   padding-left: 2%;
   padding-right: 2%;
-  
+  box-shadow: 0 2px rgba(0, 0, 0, 0.1);
 }
 #barraNavegacao ul li {
   display: block;
   list-style: none;
   padding: 20px;
 }
-#barraNavegacao ul li a{
+#barraNavegacao ul li a {
   color: var(--cor-fontes);
 }
 .container-nav li:hover {
@@ -78,17 +79,20 @@ input[type=checkbox]:checked ~ .container-nav{
   outline: none;
   border-radius: 6px;
 }
-article{
-  align-items: center;
+
+/*Corpo*/
+article {
   margin: 20px;
   box-shadow: 0 1px 2px 1px rgba(0, 0, 0, 0.1);
-  display: flex;
   border-radius: 3px;
 }
-section img{
+section img {
   width: 100%;
 }
-figcaption{
+article h2 {
+  margin: 10px;
+}
+figcaption {
   font-size: 12px;
   color: #555;
   margin: 10px;
@@ -99,39 +103,43 @@ article p {
   text-align: justify;
   margin: 10px;
 }
-footer{
+footer {
   text-align: center;
+  background-color: var(--cor-background);
+  color: var(--cor-fontes);
+  font-weight: 100;
 }
 @media (min-width: 600px) {
   .hamburger {
     display: none;
     user-select: none;
   }
-  .container-nav{
-    display:flex;
+  .container-nav {
+    display: flex;
     background-color: none;
-    position:unset;
+    position: unset;
   }
-  #barraPesquisa{
+  #barraPesquisa {
     width: 20%;
   }
-  #barraNavegacao ul li{
+  #barraNavegacao ul li {
     display: inline-flex;
   }
-  #logo{
+  #logo {
     width: 5%;
     height: 5%;
   }
   header p {
-    font-size: 140%;
+    font-size: 140px;
   }
   section {
     display: flex;
-    flex-wrap:wrap;
+    flex-wrap: wrap;
   }
-  article{
+  article {
     display: block;
-    width: 20%;
-    height: 20%;
+    width: 200px;
+    height: 200px;
+    padding: 8px;
   }
 }
