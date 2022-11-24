@@ -34,8 +34,8 @@ input[type="checkbox"] {
   color: var(--cor-fontes);
 }
 #logo {
-  width: 15%;
-  height: 15%;
+  width: 20px;
+  height: 20px;
 }
 
 /* Barra de Navegação e afins */
@@ -139,7 +139,13 @@ footer {
   article {
     display: block;
     width: 200px;
-    height: 200px;
     padding: 8px;
+    margin: 1.5% auto;
+  }
+}
+
+@media (min-width: 1041px) {
+  article {
+    min-width: 20%;
   }
 }
