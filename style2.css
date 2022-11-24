@@ -20,7 +20,7 @@ input[type="checkbox"] {
 }
 .hamburger {
   display: block;
-  line-height: 100px;
+  line-height: 2;
   font-size: 34px;
   color: rgb(26, 163, 163);
   user-select: none;
@@ -34,8 +34,8 @@ input[type="checkbox"] {
   color: var(--cor-fontes);
 }
 #logo {
-  width: 20px;
-  height: 20px;
+  width: 60px;
+  height: 30px;
 }
 
 /* Barra de Navegação e afins */
@@ -55,7 +55,7 @@ input[type="checkbox"] {
   background-color: var(--cor-background);
   padding-left: 2%;
   padding-right: 2%;
-  box-shadow: 0 2px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 3px 3px 0px rgba(0, 0, 0, 0.1);
 }
 #barraNavegacao ul li {
   display: block;
@@ -70,10 +70,11 @@ input[type="checkbox"] {
   transition: 0.4s;
   transform: rotate(90);
 }
+/*Barra de pesquisa*/
 #barraPesquisa {
   display: inline-flex;
   justify-content: center;
-  background-color: rgba(124, 248, 225, 0.158);
+  background-color: hwb(165 83% 0%);
   border: none;
   padding: 5px;
   outline: none;
@@ -126,8 +127,8 @@ footer {
     display: inline-flex;
   }
   #logo {
-    width: 5%;
-    height: 5%;
+    width: 60px;
+    height: 30px;
   }
   header p {
     font-size: 140px;
@@ -138,7 +139,7 @@ footer {
   }
   article {
     display: block;
-    width: 200px;
+    width: 300px;
     padding: 8px;
     margin: 1.5% auto;
   }
