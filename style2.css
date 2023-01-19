@@ -5,10 +5,10 @@
   font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
     Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
 }
-:root {
+/* :root {
   --cor-background: rgb(80, 180, 162);
   --cor-fontes: rgb(233, 255, 251);
-}
+} */
 input[type="checkbox"]:checked ~ .container-nav {
   display: block;
 }
@@ -22,7 +22,6 @@ input[type="checkbox"] {
   display: block;
   line-height: 2;
   font-size: 34px;
-  color: rgb(26, 163, 163);
   user-select: none;
   cursor: pointer;
 }
@@ -31,7 +30,6 @@ input[type="checkbox"] {
   font-size: 100%;
   text-align: center;
   font-weight: 500;
-  color: var(--cor-fontes);
 }
 #logo {
   width: 60px;
@@ -40,7 +38,6 @@ input[type="checkbox"] {
 
 /* Barra de Navegação e afins */
 .container-nav {
-  background-color: var(--cor-background);
   display: none;
   position: absolute;
   align-items: center;
@@ -52,21 +49,19 @@ input[type="checkbox"] {
   display: flex;
   align-items: center;
   justify-content: space-evenly;
-  background-color: var(--cor-background);
   padding-left: 2%;
   padding-right: 2%;
   box-shadow: 0 3px 3px 0px rgba(0, 0, 0, 0.1);
 }
 #barraNavegacao ul li {
   display: block;
-  list-style: none;
   padding: 20px;
+  background-color: #1a1a2e;
 }
 #barraNavegacao ul li a {
   color: var(--cor-fontes);
 }
 .container-nav li:hover {
-  background-color: rgba(40, 62, 82, 0.192);
   transition: 0.4s;
   transform: rotate(90);
 }
@@ -74,7 +69,7 @@ input[type="checkbox"] {
 #barraPesquisa {
   display: inline-flex;
   justify-content: center;
-  background-color: hwb(165 83% 0%);
+  background-color: #0f3460;
   border: none;
   padding: 5px;
   outline: none;
@@ -86,6 +81,7 @@ article {
   margin: 20px;
   box-shadow: 0 1px 2px 1px rgba(0, 0, 0, 0.1);
   border-radius: 3px;
+  background-color: #16213e;
 }
 section img {
   width: 100%;
@@ -95,19 +91,16 @@ article h2 {
 }
 figcaption {
   font-size: 12px;
-  color: #555;
   margin: 10px;
 }
 article p {
   margin-top: 10px;
-  color: #333;
   text-align: justify;
   margin: 10px;
 }
 footer {
   text-align: center;
-  background-color: var(--cor-background);
-  color: var(--cor-fontes);
+
   font-weight: 100;
 }
 @media (min-width: 600px) {
@@ -149,4 +142,14 @@ footer {
   article {
     min-width: 20%;
   }
+}
+
+.dark-theme {
+  background-color: #1a1a2e;
+  color: #e94560;
+}
+
+.light-theme {
+  background-color: #f0e9d2;
+  color: #181d31;
 }
