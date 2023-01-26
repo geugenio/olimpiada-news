@@ -56,7 +56,6 @@ input[type="checkbox"] {
 #barraNavegacao ul li {
   display: block;
   padding: 20px;
-  background-color: #1a1a2e;
 }
 #barraNavegacao ul li a {
   color: var(--cor-fontes);
@@ -69,7 +68,6 @@ input[type="checkbox"] {
 #barraPesquisa {
   display: inline-flex;
   justify-content: center;
-  background-color: #0f3460;
   border: none;
   padding: 5px;
   outline: none;
@@ -81,7 +79,6 @@ article {
   margin: 20px;
   box-shadow: 0 1px 2px 1px rgba(0, 0, 0, 0.1);
   border-radius: 3px;
-  background-color: #16213e;
 }
 section img {
   width: 100%;
