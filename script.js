@@ -1,4 +1,4 @@
 let body = document.querySelector("body");
-function switchDarkLight() {
+function switchDark() {
   body.classList.toggle("dark-theme");
 }
